@@ -15,10 +15,10 @@ Run `npm start` Navigate to `http://localhost:4200/`. The app will automatically
 ## Run client using following cammnd 
 Install dependencies and gulp file for build project.
 
-1 cd client-side
-2 npm install -g gulp-cli
-3 npm install
-4 npm start
+1. cd client-side
+2. npm install -g gulp-cli
+3. npm install
+4. npm start
 
 ## Note
 After following above step,  if any error is occuring so trying to update the node_modules using

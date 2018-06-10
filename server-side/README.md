@@ -13,11 +13,11 @@ Run `npm start` The socket.io server will be running on port 8080.
 ## Run Server using following cammnd 
 Install dependencies and gulp file for build project.
 
-1 cd server-side
-2 npm install -g gulp-cli
-3 npm install
-4 gulp build
-5 npm start
+1. cd server-side
+2. npm install -g gulp-cli
+3. npm install
+4. gulp build
+5. npm start
 
 ## Note
 After following above step,  if any error is occuring so trying to update the node_modules using
