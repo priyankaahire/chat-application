@@ -1,0 +1,7 @@
+<h2 mat-dialog-title>{{data.title}}</h2>
+<mat-dialog-content>
+    <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput name="username" [(ngModel)]="data.username" (keyup.enter)="onSave()" [formControl]="usernameFormControl" required>
+    </mat-form-field>
+</mat-dialog-content>

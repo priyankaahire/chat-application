@@ -1,0 +1,108 @@
+
+.chat-container {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+.user-profiles {
+    background-color: #f1f1f1;
+    border: 2px solid #dedede;
+    bottom: 120px;
+    float: left;
+    max-height: 452px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow: auto;
+    position: fixed;
+    top: 90px;
+    width: 35%;
+}
+
+.chat-input {
+    padding-top: 20px;
+    width: 80%;
+}
+
+.chat-list {
+    border: 1px solid #eee;
+    bottom: 120px;
+    position: fixed;
+    right: 25px;
+    top: 90px;
+    width: 60%;
+}
+
+.chat-list-item {
+    border-radius: 5px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chat-footer-container {
+    bottom: 100px;
+    padding-top: 20px;
+    position: fixed;
+    width: 84%;
+}
+
+.chat-user-image {
+    border-radius: 32px;
+    width: 50px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.chat-list-item-ul {
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin: 10px 0; 
+    padding: 10px;
+}
+.chat-list-item-dl {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border: 2px solid #dedede;
+    margin: 10px 0; 
+    padding: 10px;
+}
+
+.chat-list {
+    height: 100%;
+}
+.message-content {
+    margin-top: -14px;
+}
+.chat-window-left {
+    text-align: left;
+}
+.chat-window-left {
+    text-align: right;
+}
+.current-time {
+   color: #a7a2a2;
+}
+.chat-icon-left {
+float: left;
+}
+.chat-icon-right {
+float: right;
+}
+.edit-icon {
+    color: #a7a2a2;
+    cursor: pointer;
+    float: left;
+}
+.user-list {
+    margin-left: 30px;
+    width: 84%;
+}
+.user-list-title {
+    padding-left: 40%;
+}

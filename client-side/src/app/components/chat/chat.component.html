@@ -1,0 +1,57 @@
+<div class="chat-container">
+    <div *ngIf="userList" class="user-profiles">
+        <span class="user-list-title">
+            <b>User List</b>
+        </span>
+        <ul *ngFor="let message of messages">
+            <li>
+                <span *ngIf="message.action === action.JOINED">
+                    <mat-icon *ngIf="message.from.id === user.id" class="edit-icon" (click)="onClickUserInfo()">edit</mat-icon>
+                </span>
+                <p mat-line *ngIf="message.action === action.JOINED" class="user-list">
+                    <span>
+                        <b>{{message.from.name}}</b>
+                    </span>
+                    <span class="current-time"> {{currenttime | date : 'mediumDate'}} {{currenttime | date : 'h:mm'}}</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="chat-list">
+        <div class="chat-list-item">
+            <ul *ngFor="let message of messages" [ngClass]="[(message.action === undefined && message.from.id === user.id)? 'chat-list-item-dl': 'chat-list-item-ul']">
+                <li>
+                    <p mat-line *ngIf="message.action === undefined" [ngClass]="[(message.from.id === user.id)? 'chat-window-left': 'chat-window-right']">
+                        <button [ngClass]="[(message.from.id != user.id) ? 'chat-icon-right' : 'chat-icon-left']" *ngIf="message.from.id != user.id"
+                            mat-fab color="primary">
+                            {{message.from.name}}
+                        </button>
+                        <b *ngIf="message.from.id != user.id">{{message.from.name}}</b>
+                        <span class="current-time"> {{currenttime | date : 'mediumDate'}} {{currenttime | date : 'h:mm'}}</span>
+                    </p>
+                    <p mat-line *ngIf="message.action === undefined" class="message-content" [ngClass]="[(message.from.id === user.id)? 'chat-window-left': 'chat-window-right']">
+                        <span> {{message.content}}</span>
+                    </p>
+                    <p mat-line *ngIf="message.action === action.JOINED" class="chat-notification">
+                        <span>
+                            <b>{{message.from.name}}</b> joined to the conversation. </span>
+                    </p>
+                    <p mat-line *ngIf="message.action === action.RENAME" class="chat-notification">
+                        <span>
+                            <b>{{message.content.previousUsername}}</b> is now
+                            <b>{{message.content.username}}</b>
+                        </span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="chat-footer-container">
+            <div class="chat-input">
+                <mat-icon>message</mat-icon>
+                <mat-form-field class="chat-input">
+                    <input matInput #inputMessage maxlength="150" placeholder="Type your message" [(ngModel)]="messageContent" (keyup.enter)="sendMessage(messageContent)">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+</div>
