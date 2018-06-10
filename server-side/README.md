@@ -1,3 +1,4 @@
+## ServerSide
 
 ## Code scaffolding
 
@@ -10,7 +11,7 @@ Run `ng build` to build the project. After build create `dist/` directory.
 ## Start
 Run `npm start` The socket.io server will be running on port 8080.
 
-## Run Server using following cammnd 
+## Run Server using following command 
 Install dependencies and gulp file for build project.
 
 1. cd server-side

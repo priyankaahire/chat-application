@@ -12,7 +12,7 @@ Run `ng build` to build the project. After build create `dist/` directory.
 ## Start
 Run `npm start` Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Run client using following cammnd 
+## Run client using following command 
 Install dependencies and gulp file for build project.
 
 1. cd client-side
