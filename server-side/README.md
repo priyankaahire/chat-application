@@ -1,27 +1,24 @@
-# ServerSide
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component. 
+You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
+Run `ng build` to build the project. After build create `dist/` directory. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Start
+Run `npm start` The socket.io server will be running on port 8080.
 
-## Running unit tests
+## Run Server using following cammnd 
+Install dependencies and gulp file for build project.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1 cd server-side
+2 npm install -g gulp-cli
+3 npm install
+4 gulp build
+5 npm start
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Note
+After following above step,  if any error is occuring so trying to update the node_modules using
+`update npm` command in command line.

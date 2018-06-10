@@ -10,7 +10,6 @@ export enum DialogUserType {
   NEW,
   EDIT
 }
-const AVATAR_URL = 'https://api.adorable.io/avatars/285';
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.component.html',
@@ -59,7 +58,6 @@ export class ChatComponent implements OnInit {
     const randomId = this.getRandomId();
     this.user = {
       id: randomId,
-      avatar: `${AVATAR_URL}/'${randomId}'.png`
     };
   }
 
